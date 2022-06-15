@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon" />
+
+    <!-- ICONSCOUTN CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+
+    <!-- GOOGLE FONTS (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="/script/app.js" defer></script>
+    <script src="/script/particles.js" defer></script>
+    <title>Evosoft Solutions</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor__follower"></div>
+
+    <div class="overlay">
+    <!-- NAV -->
+    <nav>
+      <div class="container nav_container">
+        <div class="nav__content">
+          <div class="nav__left">
+            <div class="nav__logo">
+              <a href="#"><img src="img/Evosoft.png" /></a>
+            </div>
+
+            <div class="switchers">
+              <div class="switchers__lang lang">
+                <span class="lg">
+                  EN
+                  <span class="popover">
+                    <ul>
+                      <li><a href="?lang=en">RU</a></li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+              <div class="switchers__mode mode">
+                <div id="dntog" class="toggle day-night-toggle light">
+                  <input
+                    type="checkbox"
+                    id="day-night-toggle"
+                    class="toggle--checkbox"
+                    button=""
+                  />
+                  <label
+                    class="toggle--btn"
+                    id="changeTheme"
+                    for="day-night-toggle"
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav__right">
+            <ul class="nav_menu">
+              <li class="nav_link">
+                <a class="menu__link add" href="#">Home</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="#">About</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="#">Works</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="#">Prices</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="#">For clients</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="#">Contacts</a>
+              </li>
+            </ul>
+
+            <a href="#" class="nav__play"
+              >Start a project
+              <i class="uil uil-play"></i>
+            </a>
+          </div>
+        </div>
+        <!-- nav__content -->
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__item header__left">
+            <h2 class="header__subtitle">We turn ideas into reality!</h2>
+            <h4 class="header__title">
+              The main areas of our activity are the development of Internet
+              projects of various levels of complexity, the creation of business
+              automation systems and IT consulting.
+            </h4>
+
+            <button type="button" class="header__btn">
+              Consultation <br />
+              <i class="arrow-long-right"></i>
+            </button>
+          </div>
+
+          <div class="header__item canvas__item">
+            <canvas id="canvasOne" width="550px" height="550px">
+              Your browser does not support HTML5 canvas.
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <article class="about">
+      <div class="container">
+        <div class="about__content1">
+          <div class="line__top"></div>
+          <h1 class="about__subtitle">Information about</h1>
+          <div class="line__bottom"></div>
+        </div>
+
+        <div class="about__content2">
+          <div class="about__left">
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+            </h2>
+
+            <div class="about__link">
+              <h1>Follow Us</h1>
+              <div class="links">
+                <a href="#" class="link" target="_blank">
+                  <i class="uil uil-behance"></i>
+                </a>
+
+                <a href="#" class="link" target="_blank">
+                  <i class="uil uil-facebook-f"></i>
+                </a>
+
+                <a href="#" class="link" target="_blank">
+                  <i class="uil uil-instagram"></i>
+                </a>
+                
+              </div>
+            </div>
+
+          </div>
+
+          <div class="about__right">
+            <button type="button" class="header__btn about__btn">
+              START <br />
+              PROJECT
+              <i class="arrow-long-right"></i>
+            </button>
+
+            <div class="scroll-down">
+              scroll down		
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    </div>
+
+
+
+    <!-- !jQuary -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+      defer
+    ></script>
+
+    <!-- Библиотеки, скрипты из CDN... -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  </body>
+</html>
