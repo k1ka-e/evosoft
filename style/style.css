@@ -549,7 +549,6 @@ header {
 
 .header__btn {
   background: var(--primary);
-  box-shadow: -8px -8px 5px rgb(0 0 0 / 80%);
 
   width: 170px;
   height: 170px;
@@ -574,7 +573,7 @@ header {
 }
 
 .header__left {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .header__item.canvas__item {
