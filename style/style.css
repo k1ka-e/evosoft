@@ -67,6 +67,11 @@
   src: url("/font/Potra.ttf");
 }
 
+@font-face {
+  font-family: "Body-Grotesque-Fit-Bold-trial";
+  src: url("/font/Body-Grotesque-Fit-Bold-trial.ttf");
+}
+
 /* container
 ================ */
 .container {
@@ -181,13 +186,13 @@ body .overlay {
   overflow: hidden;
 }
 
-@media (max-width: 1700px){
+@media (max-width: 1700px) {
   body .overlay {
     max-width: 1400px;
   }
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
   body .overlay {
     max-width: 1200px;
   }
@@ -650,7 +655,7 @@ header {
 
 .about {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 7rem;
 }
 
 .about__subtitle {
@@ -788,12 +793,20 @@ header {
 }
 
 .scroll-down {
-  color: rgb(153, 152, 152);
+  color: var(--black);
   transform: translateY(0) rotate(-90deg);
   position: absolute;
   bottom: 100px;
   transition: 0.8s;
-  right: 26.5%;
+  right: 24%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  color: var(--black);
+
   animation-name: bounce;
   animation-timing-function: ease;
   animation-duration: 1.3s;
@@ -813,7 +826,7 @@ header {
 }
 .scroll-down::before {
   content: "";
-  background: rgb(153, 152, 152);
+  background: rgb(29, 29, 29);
   height: 1px;
   width: 70px;
   display: block;
@@ -822,4 +835,76 @@ header {
   bottom: calc(50% - 1px);
 }
 
+/* !Reviews */
+
+.reviews {
+  padding-top: 7rem;
+}
+
+.reviews__content {
+  position: relative;
+  z-index: 2;
+}
+
+.reviews__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__title {
+  font-family: "Body-Grotesque-Fit-Bold-trial";
+  font-weight: 800;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+.reviews__google__logo {
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.reviews__google__logo::before {
+  height: 2px;
+  width: 148px;
+  background: rgb(153, 152, 152);
+  content: "";
+  display: block;
+  margin-right: 45px;
+  transition: 0.8s;
+}
+
+.reviews__google__logo::after {
+  height: 2px;
+  width: 148px;
+  background: rgb(153, 152, 152);
+  content: "";
+  display: block;
+  margin-left: 45px;
+  transition: 0.8s;
+}
+
+.reviews__exellent {
+  text-transform: uppercase;
+  color: var(--black);
+
+  margin-bottom: 2rem;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.365em;
+
+  text-align: center;
+}
+
+.reviews__star i {
+  margin-right: 13px;
+  font-size: 2rem;
+  color: #f8b906;
+  margin-bottom: 3rem;
+}
 
