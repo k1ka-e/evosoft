@@ -194,7 +194,13 @@ body .overlay {
 
 @media (max-width: 1400px) {
   body .overlay {
-    max-width: 1200px;
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body .overlay {
+    max-width: 1100px;
   }
 }
 
@@ -219,6 +225,70 @@ body .overlay:after {
   background: rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
+
+/* приминимы во многих блоках */
+
+.left__title {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin-bottom: 4rem;
+  position: absolute;
+  transition: 0.3s;
+  font-family: "Body-Grotesque-Fit-Bold-trial";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.scroll-down {
+  color: var(--black);
+  transform: translateY(0) rotate(-90deg);
+  position: absolute;
+  bottom: 100px;
+  transition: 0.8s;
+  right: 24%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  color: var(--black);
+
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+
+.scroll-down.services {
+  right: 25px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(-90deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-90deg);
+  }
+}
+.scroll-down::before {
+  content: "";
+  background: rgb(29, 29, 29);
+  height: 1px;
+  width: 70px;
+  display: block;
+  position: absolute;
+  left: -95px;
+  bottom: calc(55% - 1px);
+}
+
 
 /* /////////////////////////////////////// */
 
@@ -792,48 +862,7 @@ header {
   box-shadow: none;
 }
 
-.scroll-down {
-  color: var(--black);
-  transform: translateY(0) rotate(-90deg);
-  position: absolute;
-  bottom: 100px;
-  transition: 0.8s;
-  right: 24%;
 
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-
-  color: var(--black);
-
-  animation-name: bounce;
-  animation-timing-function: ease;
-  animation-duration: 1.3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0) rotate(-90deg);
-  }
-  50% {
-    transform: translateY(-25px) rotate(-90deg);
-  }
-  100% {
-    transform: translateY(0) rotate(-90deg);
-  }
-}
-.scroll-down::before {
-  content: "";
-  background: rgb(29, 29, 29);
-  height: 1px;
-  width: 70px;
-  display: block;
-  position: absolute;
-  left: -95px;
-  bottom: calc(50% - 1px);
-}
 
 /* !Reviews */
 
@@ -907,4 +936,188 @@ header {
   color: #f8b906;
   margin-bottom: 3rem;
 }
+
+/* !TESTIMONIALS 
+//////////////////////////// */
+
+.reviews__container {
+  margin-bottom: 3rem;
+}
+
+.testimonials__block {
+  padding: 2rem;
+  border: 2px solid #999;
+}
+
+.testimonials__content {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.testimonial__info {
+  padding-left: 10px;
+}
+
+.testimonials__stars {
+  padding-top: 5px;
+  color: #f8b906;
+}
+
+.testimonials {
+  gap: 2rem;
+}
+
+.testimonial__data {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 108.5%;
+  padding-left: 3rem;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: var(--black);
+}
+
+.testimonial__body p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+
+  overflow: auto;
+  letter-spacing: 0.105em;
+  font-feature-settings: "case" on;
+
+  color: var(--black);
+}
+
+/* !Services */
+.services {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.services__title {
+  font-family: "Body-Grotesque-Fit-Bold-trial";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 108.5%;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: var(--black);
+
+  transform: rotate(-90deg);
+}
+
+.services__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.services__column {
+  flex: 0 1 50%;
+  transition: 0.6s;
+  margin-left: 10%;
+}
+
+.tablinks {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: block;
+  padding: 6px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs {
+  padding-right: 5rem;
+}
+
+.services__column__right {
+  margin-left: 15%;
+}
+
+.tabcontant__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  position: absolute;
+  right: -197px;
+  top: 302px;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 108.5%;
+  /* or 109px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--black);
+}
+
+.tabcontent__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  margin-top: 80px;
+
+  letter-spacing: 0.105em;
+  font-feature-settings: "case" on;
+
+  color: var(--black);
+}
+
+.tabs button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Create an active/current "tab button" class */
+.tabs button.active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Style the tab content */
+.tabcontent {
+  position: relative;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid var(--color);
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
 
