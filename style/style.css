@@ -559,7 +559,7 @@ nav {
 
 .menu__link:hover,
 a.nav__play:hover {
-  color: var(--black);
+  color: var(--primary);
   transition: 0.5s all ease;
 }
 
@@ -625,27 +625,6 @@ header {
   color: var(--black);
 }
 
-.header__btn {
-  background: var(--primary);
-  margin-top: 1rem;
-  width: 170px;
-  height: 170px;
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  color: var(--white);
-  border: 2px solid var(--primary);
-  transition: 0.3s;
-  cursor: pointer;
-  letter-spacing: 0.5px;
-}
-
 .header__item {
   flex: 0 0 50%;
 }
@@ -686,6 +665,35 @@ header {
   bottom: -4px;
 }
 
+.header__btn {
+  border: none;
+  margin: 10px 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+.header__btn:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+}
+
+.header__btn {
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 40px 40px var(--primary) inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.header__btn:hover {
+  background: transparent;
+  color: var(--black);
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
 @media (max-height: 1080px) {
   .header__btn {
     width: calc(100px + 70 * ((100vh - 320px) / 760));
@@ -701,20 +709,14 @@ header {
     font-size: calc(14px + 6 * ((100vh - 320px) / 760));
   }
 }
-.header__btn:hover {
-  background: transparent;
-  color: var(--black);
-  transition: all 0.5s ease-in-out;
-}
+
 
 .header__btn i {
+  margin-left: 1.5rem;
   max-width: 110px;
   margin-top: 7px;
 }
 
-.header__btn i:hover {
-  background-color: var(--black);
-}
 
 @media (max-height: 1080px) {
   .header__btn i {
@@ -799,7 +801,18 @@ header {
   position: relative;
 }
 
+.about__left h1 {
+  font-family: "Potra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  margin-bottom: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 .about__left h2 {
+  margin-top: 2rem;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -859,10 +872,6 @@ header {
   align-content: center;
   justify-content: flex-start;
   align-items: center;
-}
-
-.about__btn {
-  box-shadow: none;
 }
 
 /* !Reviews */
@@ -1301,6 +1310,10 @@ header {
   color: var(--black);
 }
 
+.info__info {
+  margin-bottom: 10px;
+}
+
 .info__info i {
   color: #000;
   font-size: 20px;
@@ -1348,6 +1361,7 @@ header {
 
 .info__block {
   background: transparent;
+  height: auto;
     border: 1px solid var(--black);
     transition: 0.3s;
     padding: 2rem;

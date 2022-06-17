@@ -14,6 +14,20 @@
       href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
     />
 
+    <!-- ANIMATE -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="animate/animate.min.css" />
+
+    <script src="animate/wow.min.js" defer></script>
+    <script>
+      new WOW().init();
+    </script>
+
     <!-- GOOGLE FONTS (MONTSERRAT) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +54,8 @@
   <body>
     <div class="cursor"></div>
     <div class="cursor__follower"></div>
+
+    <!-- /////////// -->
 
     <div class="overlay">
       <!-- NAV -->
@@ -119,7 +135,7 @@
       <header>
         <div class="container">
           <div class="header__content">
-            <div class="header__item header__left">
+            <div class="header__item header__left wow animate__animated animate__backInLeft">
               <h2 class="header__subtitle">We turn ideas into reality!</h2>
               <h4 class="header__title">
                 The main areas of our activity are the development of Internet
@@ -149,45 +165,53 @@
         <div class="container">
           <div class="about__content1">
             <div class="line__top"></div>
-            <h1 class="about__subtitle">Information about</h1>
+            <h1 class="about__subtitle wow animate__animated animate__backInLeft">Information about</h1>
             <div class="line__bottom"></div>
           </div>
 
           <div class="about__content2">
             <div class="about__left">
+              <h1>Welcome to "Evosoft" Solutions</h1>
               <h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco labori
+                Evosoft Solutions is an actively developing IT company that
+                provides a wide range of high quality products, solutions and
+                services in the field of information technology. The main areas
+                of our activity are the development of Internet projects of
+                various levels of complexity, the creation of business
+                automation systems and IT consulting.
               </h2>
 
               <div class="about__link">
                 <h1>Follow Us</h1>
                 <div class="links">
-                  <a href="#" class="link" target="_blank">
-                    <i class="uil uil-behance"></i>
+                  <a
+                    href="https://t.me/evosoft_solutions"
+                    class="link"
+                    target="_blank"
+                  >
+                    <i class="uil uil-telegram"></i>
                   </a>
 
-                  <a href="#" class="link" target="_blank">
+                  <a
+                    href="https://www.facebook.com/evosoft.solutions/"
+                    class="link"
+                    target="_blank"
+                  >
                     <i class="uil uil-facebook-f"></i>
                   </a>
 
-                  <a href="#" class="link" target="_blank">
+                  <a
+                    href="https://www.instagram.com/evosoft.solutions/"
+                    class="link"
+                    target="_blank"
+                  >
                     <i class="uil uil-instagram"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="about__right">
+            <div class="about__right wow animate__animated animate__backInRight">
               <button type="button" class="header__btn about__btn">
                 START <br />
                 PROJECT
@@ -480,7 +504,7 @@
 
             <div class="services__column__right">
               <div style="display: block" id="Desing" class="tabcontent">
-                <img src="img/design.png" class="tabcontent__img" />
+                <img src="img/services/design.png" class="tabcontent__img" />
                 <div class="tabcontant__title">Design</div>
                 <div class="tabcontent__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -491,7 +515,10 @@
               </div>
 
               <div id="Technology" class="tabcontent">
-                <img src="img/technology.png" class="tabcontent__img" />
+                <img
+                  src="img/services/technology.png"
+                  class="tabcontent__img"
+                />
                 <div class="tabcontant__title">Technology</div>
                 <div class="tabcontent__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -502,7 +529,7 @@
               </div>
 
               <div id="Marketing" class="tabcontent">
-                <img src="img/marketing.png" class="tabcontent__img" />
+                <img src="img/services/marketing.png" class="tabcontent__img" />
                 <div class="tabcontant__title">Marketing</div>
                 <div class="tabcontent__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -513,7 +540,7 @@
               </div>
 
               <div id="Research" class="tabcontent">
-                <img src="img/research.png" class="tabcontent__img" />
+                <img src="img/services/research.png" class="tabcontent__img" />
                 <div class="tabcontant__title">Research</div>
                 <div class="tabcontent__description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -600,72 +627,95 @@
                 <div class="info__head">
                   <div class="info__info phone">
                     <i class="uil uil-phone-alt"></i>
-                    <a href="tel:+1 (647)-563-9114">+1 (647)-563-9114</a>
+                    <a href="tel:+998 98 888 01 22">+998 98 888 01 22</a>
+                  </div>
+
+                  <div class="info__info phone">
+                    <i class="uil uil-phone-alt"></i>
+                    <a href="tel:+998 90 944 64 00">+998 90 944 64 00</a>
                   </div>
 
                   <div class="info__info email">
                     <i class="uil uil-envelope"></i>
-                    <a href="mailto:info@leadlls.com">info@leadlls.com</a>
+                    <a href="mailto:info@leadlls.com"
+                      >info@evosoft-solutions.com</a
+                    >
                   </div>
 
                   <div class="info__info adress">
                     <i class="uil uil-map-marker"></i>
-                    <a
-                      target="_blank"
-                      href="https://www.google.com/maps/place/LEAD+Web+Studio/@43.7957236,-79.4293485,15z/data=!4m5!3m4!1s0x0:0xbe14369424b0eaaa!8m2!3d43.7957236!4d-79.4293485"
-                      >206 Hilda Ave, North York, ON M2M 1W1, Canada</a
+                    <a target="_blank" href=""
+                      >8 Labzak street, Shaykhontokhur district, Tashkent,
+                      Uzbekistan, 100128</a
                     >
                   </div>
-                </div> <!-- info__head  -->
+                </div>
+                <!-- info__head  -->
 
-                  <div class="contact__btn">
-                    <div class="info__column">
-                      <div class="info__block">
-                        <div class="info__title">Become a client</div>
-                        <a href="mailto:info@leadlls.com" class="info__link">info@leadlls.com</a>
-                        <i class="arrow-long-right"></i>
-                      </div>
+                <div class="contact__btn">
+                  <div class="info__column">
+                    <div class="info__block">
+                      <div class="info__title">Become a client</div>
+                      <a href="mailto:info@leadlls.com" class="info__link"
+                        >info@leadlls.com</a
+                      >
+                      <i class="arrow-long-right"></i>
                     </div>
+                  </div>
 
-                    <div class="info__column ">
+                  <div class="info__column">
                     <div class="about__link info__follow">
                       <h1>Follow Us</h1>
                       <div class="links">
-                        <a href="#" class="link" target="_blank">
-                          <i class="uil uil-behance"></i>
+                        <a
+                          href="https://t.me/evosoft_solutions"
+                          class="link"
+                          target="_blank"
+                        >
+                          <i class="uil uil-telegram"></i>
                         </a>
-      
-                        <a href="#" class="link" target="_blank">
+
+                        <a
+                          href="https://www.facebook.com/evosoft.solutions/"
+                          class="link"
+                          target="_blank"
+                        >
                           <i class="uil uil-facebook-f"></i>
                         </a>
-      
-                        <a href="#" class="link" target="_blank">
+
+                        <a
+                          href="https://www.instagram.com/evosoft.solutions/"
+                          class="link"
+                          target="_blank"
+                        >
                           <i class="uil uil-instagram"></i>
                         </a>
                       </div>
                     </div>
-
-                    </div>
-
-                    <div class="info__column">
-                      <div class="info__block black">
-                        <div class="info__title">Become a Partner</div>
-                        <a href="mailto:info@leadlls.com" class="info__link">info@leadlls.com</a>
-                        <i class="arrow-long-right"></i>
-                      </div>
-                    </div>
-
-                    <div class="info__column">
-                      <div class="info__block">
-                        <div class="info__title">Join lead team</div>
-                        <a href="mailto:info@leadlls.com" class="info__link">info@leadlls.com</a>
-                        <i class="arrow-long-right"></i>
-                      </div>
-                    </div>
-
                   </div>
-                 
-              </div>  <!-- contact__right  -->
+
+                  <div class="info__column">
+                    <div class="info__block black">
+                      <div class="info__title">Become a Partner</div>
+                      <a href="mailto:info@leadlls.com" class="info__link"
+                        >info@leadlls.com</a
+                      >
+                      <i class="arrow-long-right"></i>
+                    </div>
+                  </div>
+
+                  <div class="info__column">
+                    <div class="info__block">
+                      <div class="info__title">Join lead team</div>
+                      <a href="mailto:info@leadlls.com" class="info__link"
+                        >info@leadlls.com</a
+                      >
+                      <i class="arrow-long-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- contact__right  -->
             </div>
           </div>
           <h1 class="left__title">Contact</h1>
