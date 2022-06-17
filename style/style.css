@@ -526,6 +526,9 @@ body .overlay:after {
 }
 
 nav {
+  z-index: 49;
+  width: auto;
+  top: 0;
   background-color: var(--white);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -579,16 +582,6 @@ a.nav__play i {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 1200px) {
-  a.nav__play {
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
-  }
-
-  .nav__right {
-    align-items: flex-start;
-  }
-}
 
 /* ///////////////////////////////////////// */
 
@@ -672,7 +665,7 @@ header {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: normal;
 }
@@ -710,13 +703,11 @@ header {
   }
 }
 
-
 .header__btn i {
   margin-left: 1.5rem;
   max-width: 110px;
   margin-top: 7px;
 }
-
 
 @media (max-height: 1080px) {
   .header__btn i {
@@ -744,12 +735,6 @@ header {
   text-transform: uppercase;
 
   color: var(--black);
-}
-
-@media (max-width: 1500px) {
-  .about__subtitle {
-    font-size: 80px;
-  }
 }
 
 .about__content1 {
@@ -801,7 +786,7 @@ header {
   position: relative;
 }
 
-.about__left h1 {
+.about__title {
   font-family: "Potra";
   font-style: normal;
   font-weight: 500;
@@ -954,6 +939,11 @@ header {
   margin-bottom: 3rem;
 }
 
+.testimonials {
+  width: auto;
+  height: auto;
+}
+
 .testimonials__block {
   padding: 2rem;
   border: 2px solid #999;
@@ -991,14 +981,17 @@ header {
   color: var(--black);
 }
 
+.testimonial__body {
+  overflow: auto;
+}
+
+
 .testimonial__body p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 169%;
-
-  overflow: auto;
   letter-spacing: 0.105em;
   font-feature-settings: "case" on;
 
@@ -1346,33 +1339,38 @@ header {
 
 .info__column {
   flex: 0 1 44%;
+
 }
 
+.info__column:nth-child(1) {
+margin-bottom: 2rem;
+}
 
 .info__column:nth-child(2) {
-  margin-bottom: 60px;
+  margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
 }
 
-.info__column:nth-child(2n+ 1) {
+.info__column:nth-child(2n + 1) {
   margin-right: 2rem;
 }
 
 .info__block {
   background: transparent;
-  height: auto;
-    border: 1px solid var(--black);
-    transition: 0.3s;
-    padding: 2rem;
-    color: var(--black);
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--black);
+  transition: 0.3s;
+  padding: 2rem;
+  color: var(--black);
 }
 
 .info__title {
   text-transform: uppercase;
   font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .info__link {

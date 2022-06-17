@@ -1,7 +1,7 @@
 //  Swiper
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 44,
     pagination: {
       el: ".swiper-pagination",
@@ -10,8 +10,12 @@ var swiper = new Swiper(".mySwiper", {
     // when window width is >= 600px
     breakpoints: {
       331: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
+      200: {
+        slidesPerView: 2,
+      }
+
     },
   });
 

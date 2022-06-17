@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="animate/animate.min.css" />
 
-    <script src="animate/wow.min.js" defer></script>
+    <script src="animate/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -36,19 +36,27 @@
       rel="stylesheet"
     />
 
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/0ca3153d0b.js"
       crossorigin="anonymous"
       defer
     ></script>
 
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media.css">
+
+    <!-- Script -->
     <script src="/script/app.js" defer></script>
     <script src="/script/particles.js" defer></script>
+
     <title>Evosoft Solutions</title>
   </head>
   <body>
@@ -171,7 +179,7 @@
 
           <div class="about__content2">
             <div class="about__left">
-              <h1>Welcome to "Evosoft" Solutions</h1>
+              <h1 class="about__title">Welcome to "Evosoft" Solutions</h1>
               <h2>
                 Evosoft Solutions is an actively developing IT company that
                 provides a wide range of high quality products, solutions and
@@ -230,7 +238,7 @@
         <div class="container">
           <div class="reviews__content">
             <div class="reviews__head">
-              <h1 class="reviews__title">Reviews</h1>
+              <h1 class="reviews__title wow animate__animated animate__fadeIn">Reviews</h1>
 
               <div class="reviews__google__logo">
                 <img width="150px" src="/img/google-logo.svg" />
@@ -254,7 +262,7 @@
       </section>
 
       <section class="container reviews__container mySwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper wow animate__animated animate__fadeInUp">
           <article class="testimonials swiper-slide">
             <div class="testimonials__block">
               <div class="testimonials__content">
@@ -272,7 +280,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -303,7 +310,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -333,7 +339,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -363,7 +368,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -393,7 +397,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -423,7 +426,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -453,7 +455,6 @@
                   </div>
                 </div>
 
-                <div class="testimonial__data">12.12.2021</div>
               </div>
 
               <div class="testimonial__body">
@@ -467,13 +468,12 @@
           </article>
         </div>
 
-        <!-- <div class="swiper-pagination"></div> -->
       </section>
 
       <section class="services">
         <div class="container">
           <div class="services__content">
-            <div class="services__column">
+            <div class="services__column wow animate__animated animate__fadeInLeft">
               <div class="tabs">
                 <button
                   class="tablinks active"
@@ -502,7 +502,7 @@
               </button>
             </div>
 
-            <div class="services__column__right">
+            <div class="services__column__right wow animate__animated animate__fadeInRight">
               <div style="display: block" id="Desing" class="tabcontent">
                 <img src="img/services/design.png" class="tabcontent__img" />
                 <div class="tabcontant__title">Design</div>
@@ -593,7 +593,7 @@
         <!-- container -->
       </article>
 
-      <section class="contact">
+      <section class="contact wow animate__animated animate__slideInUp">
         <div class="container">
           <div class="contact__body">
             <h3 class="contact__title">Contact us</h3>
