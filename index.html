@@ -51,7 +51,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/media.css" />
+    <!-- Добавляем в head пустой тег link -->
+    <link rel="stylesheet" type="text/html" title="theme" href="#" />
 
     <!-- Script -->
     <script src="/script/app.js" defer></script>
@@ -71,40 +73,15 @@
         <div class="container nav_container">
           <div class="nav__content">
             <div class="nav__left">
+           
+
               <div class="nav__logo">
                 <a href="#"><img src="img/Evosoft.png" /></a>
               </div>
 
-              <div class="switchers">
-                <div class="switchers__lang lang">
-                  <span class="lg">
-                    EN
-                    <span class="popover">
-                      <ul>
-                        <li><a href="?lang=en">RU</a></li>
-                      </ul>
-                    </span>
-                  </span>
-                </div>
-                <div class="switchers__mode mode">
-                  <div id="dntog" class="toggle day-night-toggle light">
-                    <input
-                      type="checkbox"
-                      id="day-night-toggle"
-                      class="toggle--checkbox"
-                      button=""
-                    />
-                    <label
-                      class="toggle--btn"
-                      id="changeTheme"
-                      for="day-night-toggle"
-                    ></label>
-                  </div>
-                </div>
-              </div>
-              <!-- switchers -->
+
             </div>
-            <!-- nav__lt=eft -->
+            <!-- nav__left -->
 
             <div class="nav__right">
               <ul class="nav_menu">
@@ -132,9 +109,49 @@
                 >Start a project
                 <i class="uil uil-play"></i>
               </a>
+
+              <div class="mobile-nav">
+                <div class="b-nav">
+                  <ul>
+                    <li>
+                      <a class="b-link b-link--active" href="#">Home</a>
+                    </li>
+                    <li><a class="b-link" href="#">About</a></li>
+                    <li><a class="b-link" href="#">Works</a></li>
+                    <li><a class="b-link" href="#">Prices</a></li>
+                    <li><a class="b-link" href="#">For clients</a></li>
+                    <li><a class="b-link" href="#">Contacts</a></li>
+                  </ul>
+
+                  <input
+                    type="text"
+                    class="mobile-search"
+                    placeholder="Enter keyword"
+                    name=""
+                  />
+                  <input
+                    type="submit"
+                    class="mobile-search-btn"
+                    value="Search"
+                  />
+                </div>
+
+                <!-- Burger-Icon -->
+                <div class="b-container">
+                  <div class="b-menu">
+                    <div class="b-bun b-bun--top"></div>
+                    <div class="b-bun b-bun--mid"></div>
+                    <div class="b-bun b-bun--bottom"></div>
+                  </div>
+
+                  <!-- Burger-Brand -->
+                  <a href="#" class="b-brand"></a>
+                </div>
+              </div>
+
+
             </div>
-          </div>
-          <!-- nav__content -->
+          </div><!-- nav__content -->
         </div>
         <!-- container -->
       </nav>
@@ -143,7 +160,9 @@
       <header>
         <div class="container">
           <div class="header__content">
-            <div class="header__item header__left wow animate__animated animate__backInLeft">
+            <div
+              class="header__item header__left wow animate__animated animate__backInLeft"
+            >
               <h2 class="header__subtitle">We turn ideas into reality!</h2>
               <h4 class="header__title">
                 The main areas of our activity are the development of Internet
@@ -173,7 +192,11 @@
         <div class="container">
           <div class="about__content1">
             <div class="line__top"></div>
-            <h1 class="about__subtitle wow animate__animated animate__backInLeft">Information about</h1>
+            <h1
+              class="about__subtitle wow animate__animated animate__backInLeft"
+            >
+              Information about
+            </h1>
             <div class="line__bottom"></div>
           </div>
 
@@ -219,18 +242,17 @@
               </div>
             </div>
 
-            <div class="about__right wow animate__animated animate__backInRight">
+            <div
+              class="about__right wow animate__animated animate__backInRight"
+            >
               <button type="button" class="header__btn about__btn">
                 START <br />
                 PROJECT
                 <i class="arrow-long-right"></i>
               </button>
             </div>
-          </div>
-          <!-- about__containt2 -->
-        </div>
-        <!-- container -->
-        <div class="scroll-down">scroll down</div>
+          </div><!-- about__containt2 -->
+        </div><!-- container -->
       </article>
 
       <!-- REVIEWS -->
@@ -238,7 +260,9 @@
         <div class="container">
           <div class="reviews__content">
             <div class="reviews__head">
-              <h1 class="reviews__title wow animate__animated animate__fadeIn">Reviews</h1>
+              <h1 class="reviews__title wow animate__animated animate__fadeIn">
+                Reviews
+              </h1>
 
               <div class="reviews__google__logo">
                 <img width="150px" src="/img/google-logo.svg" />
@@ -279,7 +303,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -309,7 +332,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -338,7 +360,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -367,7 +388,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -396,7 +416,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -425,7 +444,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -454,7 +472,6 @@
                     <i class="fas fa-star star1"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="testimonial__body">
@@ -467,13 +484,17 @@
             </div>
           </article>
         </div>
-
       </section>
 
       <section class="services">
         <div class="container">
+          <h1 class="reviews__title wow animate__animated animate__fadeIn">
+            Services
+          </h1>
           <div class="services__content">
-            <div class="services__column wow animate__animated animate__fadeInLeft">
+            <div
+              class="services__column wow animate__animated animate__fadeInLeft"
+            >
               <div class="tabs">
                 <button
                   class="tablinks active"
@@ -502,7 +523,9 @@
               </button>
             </div>
 
-            <div class="services__column__right wow animate__animated animate__fadeInRight">
+            <div
+              class="services__column__right wow animate__animated animate__fadeInRight"
+            >
               <div style="display: block" id="Desing" class="tabcontent">
                 <img src="img/services/design.png" class="tabcontent__img" />
                 <div class="tabcontant__title">Design</div>
@@ -551,13 +574,15 @@
               </div>
             </div>
           </div>
-          <h1 class="left__title">Services</h1>
         </div>
         <!-- container -->
       </section>
 
       <article class="portfolio">
         <div class="container">
+          <h1 class="reviews__title wow animate__animated animate__fadeIn">
+            Portfolio
+          </h1>
           <div class="portfolio__content">
             <div class="portfolio__block">
               <a href="#">
@@ -718,7 +743,6 @@
               <!-- contact__right  -->
             </div>
           </div>
-          <h1 class="left__title">Contact</h1>
         </div>
       </section>
     </div>

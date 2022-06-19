@@ -1,7 +1,7 @@
 //  Swiper
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 44,
     pagination: {
       el: ".swiper-pagination",
@@ -9,15 +9,51 @@ var swiper = new Swiper(".mySwiper", {
     },
     // when window width is >= 600px
     breakpoints: {
-      331: {
+      1400: {
+        slidesPerView: 3,
+      },
+      1100: {
         slidesPerView: 2,
+        spaceBetween: 25,
+      },
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      400: {
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
       200: {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: 0,
       }
 
-    },
+     },
   });
+
+  /********************** Mobile Menu ***********************/
+'use strict';
+
+(function() {
+  var body = document.body;
+  var burgerMenu = document.getElementsByClassName('b-menu')[0];
+  var burgerContain = document.getElementsByClassName('b-container')[0];
+  var burgerNav = document.getElementsByClassName('b-nav')[0];
+
+  burgerMenu.addEventListener('click', function toggleClasses() {
+    [body, burgerContain, burgerNav].forEach(function (el) {
+      el.classList.toggle('open');
+    });
+  }, false);
+})();
+
+
+/********************** Mobile Menu ***********************/
 
 
 
@@ -44,3 +80,4 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
