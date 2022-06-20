@@ -122,9 +122,51 @@
     font-size: 13px;
   }
 
+  /* contact */
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .contact__content {
+    display: block;
+  }
+
+  .contact__left,
+  .contact__right {
+    width: 100%;
+}
+
+.contact__right {
+    margin-top: 2rem;
+}
+
   .contact__btn {
     display: none;
   }
+
+  /* about_help */
+  .about__help__title,
+  .advantages__title{
+    font-size: 30px;
+  }
+
+  .column__discription,
+  .advantages__list__body {
+    margin-top: 2rem;
+    line-height: 1.2; 
+  }
+
+  .about__help__right {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .about__help__content,
+  .about__help__column,
+  .advantages__columns {
+    display: block;
+  }
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -162,7 +204,7 @@
 
 @media (max-width: 550px) {
   .container {
-    max-width: 500px;
+    max-width: 450px;
   }
 
   .testimonial__body p {
@@ -222,12 +264,31 @@
     width: 400px;
   }
 
+  /* Contact */
   .contact__title {
     font-size: 20px;
   }
 
+  .contact__left {
+    margin-left: 0;
+  }
+
   .contact__subtitle {
     font-size: 15px;
+  }
+
+  /* About__help */
+
+  .about__help__right {
+    margin-left: 0;
+  }
+
+  .column__discription:first-child {
+    margin-right: 0;
+  }
+
+  .advantages__list__item {
+    width: 100%;
   }
 }
 
@@ -274,6 +335,10 @@
 
 .portfolio__block img {
     width: 350px;
+}
+
+.advantages__list__body {
+    font-size: 10px;
 }
 
 }
