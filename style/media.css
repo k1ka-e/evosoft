@@ -223,16 +223,46 @@
     max-width: 550px;
   }
 
+  #canvasOne {
+    width: 300px;
+    height: 300px;
+  }
+
   .services__content {
     display: block;
+  }
+
+  .tabcontent__img {
+    width: 427px;
+}
+
+.tabcontant__title {
+  top: 233px;
+}
+
+  .header__btn {
+    display: none;
   }
 
   .tabs button {
     text-align: center;
   }
 
+  .about__left  {
+    flex: 0 1 100%;
+  }
+
   .portfolio {
     padding-top: 33rem;
+  }
+
+  .portfolio__html {
+    padding-top: 2rem;
+  }
+
+  .services__column__right {
+    margin-top: 1rem;
+    margin-left: 15%;
   }
 
   .info__info a,
@@ -249,11 +279,6 @@
 
   .testimonial__body p {
     font-size: 13px;
-  }
-
-  #canvasOne {
-    width: 300px;
-    height: 300px;
   }
 
   .header__subtitle,

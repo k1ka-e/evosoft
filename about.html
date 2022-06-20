@@ -68,88 +68,102 @@
     <!-- /////////// -->
 
     <div class="overlay">
-      <!-- NAV -->
-      <nav>
-        <div class="container nav_container">
-          <div class="nav__content">
-            <div class="nav__left">
-              <div class="nav__logo">
-                <a href="index.html"><img src="img/Evosoft.png" /></a>
-              </div>
+     <!-- NAV -->
+     <nav>
+      <div class="container nav_container">
+        <div class="nav__content">
+          <div class="nav__left">
+            <div class="nav__logo">
+              <a href="index.html"><img src="img/Evosoft.png" /></a>
             </div>
-            <!-- nav__left -->
 
-            <div class="nav__right">
-              <ul class="nav_menu">
-                <li class="nav_link">
-                  <a class="menu__link add" href="index.html">Home</a>
-                </li>
-                <li class="nav_link">
-                  <a class="menu__link active add" href="about.html">About</a>
-                </li>
-                <li class="nav_link">
-                  <a class="menu__link add" href="work.html">Works</a>
-                </li>
-                <li class="nav_link">
-                  <a class="menu__link add" href="forClients.html">For Clients</a>
-                </li>
-                <li class="nav_link">
-                  <a class="menu__link add" href="contact.html">Contacts</a>
-                </li>
-              </ul>
+            <div class="select-wrap">
+            <select
+              class="custom-select"
+              id="select"
+              name="select"
+              placeholder="En"
+            >
+              <option value="option1">Uz</option>
+              <option value="option2">En</option>
+              <option value="option3">Ru</option>
+            </select>
+          </div>
 
-              <a href="#" class="nav__play"
-                >Start a project
-                <i class="uil uil-play"></i>
-              </a>
+          </div>
+          <!-- nav__left -->
 
-              <div class="mobile-nav">
-                <div class="b-nav">
-                  <ul>
-                    <li>
-                      <a class="b-link b-link--active" href="index.html"
-                        >Home</a
-                      >
-                    </li>
-                    <li><a class="b-link" href="about.html">About</a></li>
-                    <li><a class="b-link" href="work.html">Works</a></li>
-                    <li><a class="b-link" href="forClients.html">For Clients</a></li>
-                    <li><a class="b-link" href="contact.html">Contacts</a></li>
-                  </ul>
+          <div class="nav__right">
+            <ul class="nav_menu">
+              <li class="nav_link">
+                <a class="menu__link  add" href="index.html">Home</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link active add" href="about.html">About</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="work.html">Works</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="forClients.html">For Clients</a>
+              </li>
+              <li class="nav_link">
+                <a class="menu__link add" href="contact.html">Contacts</a>
+              </li>
+            </ul>
 
-                  <input
-                    type="text"
-                    class="mobile-search"
-                    placeholder="Enter keyword"
-                    name=""
-                  />
-                  <input
-                    type="submit"
-                    class="mobile-search-btn"
-                    value="Search"
-                  />
+            <a href="contact.html" class="nav__play"
+              >Start a project
+              <i class="uil uil-play"></i>
+            </a>
+
+            <div class="mobile-nav">
+              <div class="b-nav">
+                <ul>
+                  <li>
+                    <a class="b-link b-link--active" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li><a class="b-link" href="about.html">About</a></li>
+                  <li><a class="b-link" href="work.html">Works</a></li>
+                  <li><a class="b-link" href="forClients.html">For clients</a></li>
+                  <li><a class="b-link" href="contact.html">Contacts</a></li>
+                </ul>
+
+                <input
+                  type="text"
+                  class="mobile-search"
+                  placeholder="Enter keyword"
+                  name=""
+                />
+                <input
+                  type="submit"
+                  class="mobile-search-btn"
+                  value="Search"
+                />
+              </div>
+
+              <!-- Burger-Icon -->
+              <div class="b-container">
+                <div class="b-menu">
+                  <div class="b-bun b-bun--top"></div>
+                  <div class="b-bun b-bun--mid"></div>
+                  <div class="b-bun b-bun--bottom"></div>
                 </div>
 
-                <!-- Burger-Icon -->
-                <div class="b-container">
-                  <div class="b-menu">
-                    <div class="b-bun b-bun--top"></div>
-                    <div class="b-bun b-bun--mid"></div>
-                    <div class="b-bun b-bun--bottom"></div>
-                  </div>
-
-                  <!-- Burger-Brand -->
-                  <a href="#" class="b-brand"></a>
-                </div>
+                <!-- Burger-Brand -->
+                <a href="#" class="b-brand"></a>
               </div>
             </div>
           </div>
-          <!-- nav__content -->
         </div>
-        <!-- container -->
-      </nav>
+        <!-- nav__content -->
+      </div>
+      <!-- container -->
+    </nav>
 
-      <article class="about__help">
+      <article class="about__help  wow animate__animated animate__zoomIn" >
         <div class="container">
           <h1 class="about__help__title">
             Want a unique design?
@@ -194,7 +208,7 @@
       </article>
 
 
-      <article class="about__advantages">
+      <article class="about__advantages  wow animate__animated animate__zoomInUp">
         <div class="container">
             <h1 class="advantages__title">
                 Speed, quality <br/>
