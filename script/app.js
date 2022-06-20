@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 15,
     },
     600: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     400: {
@@ -47,27 +47,45 @@ new Swiper(".mySwiper2", {
   },
 
   breakpoints: {
-    600: {
+    800: {
       slidesPerView: 2,
       grid: {
         rows: 2,
       },
     },
+    600: {
+      slidesPerView: 1,
+      grid: {
+        rows: 2,
+      },
+    },
+    500: {
+      slidesPerView: 1,
+      grid: {
+        rows: 2,
+      },
+    },
+    400: {
+      slidesPerView: 1,
+      grid: {
+        rows: 2,
+      },
+    },
+    300: {
+      slidesPerView: 1,
+      grid: {
+        rows: 2,
+      },
+    },
+    200: {
+      slidesPerView: 1,
+      grid: {
+        rows: 2,
+      },
+    }
     
   }
 });
-
-new Swiper(".mySwiper3", {
-  slidesPerView: 4,
-  grid: {
-    rows: 3,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 
 /* select======== */
 const getSelectTemplate = (classes, placeholder, content) => `
