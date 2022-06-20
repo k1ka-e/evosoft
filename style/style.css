@@ -643,7 +643,7 @@ select.select-wrap {
   border-radius: 30px;
 
   font-family: "Montserrat";
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 128.5%;
@@ -729,8 +729,7 @@ select.select-wrap {
   right: 0;
   min-width: 100%;
 
-  border: 1px solid var(--primary);
-  border-radius: 20px;
+  border-radius: 20px solid var(--primary);
 
   background: #fff;
   transition: all 0.3s ease-in-out;
