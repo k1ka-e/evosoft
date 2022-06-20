@@ -105,10 +105,10 @@
                   <a class="menu__link add" href="work.html">Works</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link add" href="forClients.html">For clients</a>
+                  <a class="menu__link active add" href="forClients.html">For clients</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link active add" href="contact.html">Contacts</a>
+                  <a class="menu__link add" href="contact.html">Contacts</a>
                 </li>
               </ul>
 
@@ -161,8 +161,117 @@
         </div><!-- container -->
       </nav>
 
+      <!-- clients -->
+      <div class="clients">
+        <div class="container">
+          <div class="clients__content">
+            <div class="client__left">
+              <div class="client__title">
+                IF YOU ARE AN EXISTING CUSTOMER AND WOULD LIKE TO PAY THE INVOICE, PLEASE FOLLOW THE STEPS BELOW
+              </div>
 
-      <section class="contact contact__html">
+              <form class="forClients__column_form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+                <div class="form-group">
+                  <label for="forClients_left__firstname">First Name</label>
+                  <input type="text" required="" placeholder="Enter your first name" name="first_name" id="forClients_left__firstname">
+                </div>
+
+                <div class="form-group">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" required="" placeholder="Enter your last name" name="last_name" id="forClients_left__lastname">
+                </div>
+
+                <div class="form-group">
+                  <label for="services">Services you pay for</label>
+                  <input type="text" required="" placeholder="Services you pay for" name="item_name" id="forClients_left__services">
+                </div>
+
+                <div class="form-group">
+                  <div class="form-group__columns">
+                    <div class="form-group__column columnstwo">
+                      <label for="forClients_left__amount">Amount</label>
+                      <input type="number" name="amount" placeholder="Amount" required="" class="forClients_left__amount" id="forClients_left__amount">
+                    </div>
+                    <div class="form-group__column columnstwo sDiv">
+                      <select name="forClients_left__currency" required="" id="forClients_left__currency">
+                        <option value="USD">USD</option>
+                        <option value="CAD">UZS</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <input type="hidden" name="currency_code" id="forClients_left__currency_input" value="USD">
+                <input type="hidden" title="shipping" name="no_shipping" value="1" id="no_shipping">
+
+                <button type="submit" name="submit" class="btn-primary">Pay Now</button>
+
+              </form>
+
+            </div>
+            <div class="client__right">
+              <div class="client__title">
+                IF YOU ARE AN EXISTING CUSTOMER AND WOULD LIKE TO PAY THE INVOICE, PLEASE FOLLOW THE STEPS BELOW
+              </div>
+
+              <form class="forClients__column_form" method="post" action="https://www.paypal.com/cgi-bin/webscr">
+
+                <div class="form-group">
+                  <label for="forClients_right__firstname">First Name</label>
+                  <input type="text" name="first_name" placeholder="Enter your first name" id="forClients_right__firstname">
+                </div>
+
+                <div class="form-group">
+                  <label for="forClients_right__lastname">Last Name</label>
+                  <input type="text" name="last_name" placeholder="Enter your last name" id="forClients_right__lastname">
+                </div>
+
+                <div class="form-group">
+                  <label for="forClients_right__services">Services you pay for</label>
+                  <input type="text" name="item_name" placeholder="Services you pay for" id="forClients_right__services">
+                </div>
+
+                <div class="form-group">
+                  <div class="form-group__columns">
+                    <div class="form-group__column columnsthree">
+                      <label for="forClients_right__amount">Amount</label>
+                      <input type="number" name="a3" placeholder="Amount" class="forClients_right__amount" id="forClients_right__amount">
+                    </div>
+                    <div class="form-group__column columnsthree sDiv">
+                      <select name="forClients_right__monthly" id="regularity">
+                        <option value="M">Monthly</option>
+                        <option value="W">Weekly</option>
+                        <option value="D">Daily</option>
+                      </select>
+                    </div>
+                    <div class="form-group__column columnsthree sDiv">
+                      <select name="forClients_right__currency" id="forClients_right__currency">
+                        <option value="USD">USD</option>
+                        <option value="CAD">UZS</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="p3" value="1">
+                <input type="hidden" name="t3" value="M">
+                <input type="hidden" name="src" value="1">
+                <input type="hidden" name="sra" value="1">
+                <input type="hidden" name="currency_code" id="forClients_right__currency_input" value="USD">
+                <input type="hidden" title="shipping" name="no_shipping" value="1" id="no_shipping2">
+
+                <button type="submit" name="submit" class="btn-primary">Subscribe</button>
+
+              </form>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <section class="contact ">
         <div class="container">
           <div class="contact__body">
             <h3 class="contact__title">Contact us</h3>
@@ -289,8 +398,9 @@
           </div>
         </div>
       </section>
-    </div>
-    <!-- overlay -->
+
+
+    </div><!-- overlay -->
 
     <!-- !jQuary -->
     <script

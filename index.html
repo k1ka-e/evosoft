@@ -96,7 +96,7 @@
             <div class="nav__right">
               <ul class="nav_menu">
                 <li class="nav_link">
-                  <a class="menu__link add" href="index.html">Home</a>
+                  <a class="menu__link active add" href="index.html">Home</a>
                 </li>
                 <li class="nav_link">
                   <a class="menu__link add" href="about.html">About</a>
@@ -105,7 +105,7 @@
                   <a class="menu__link add" href="work.html">Works</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link add" href="#">For clients</a>
+                  <a class="menu__link add" href="forClients.html">For Clients</a>
                 </li>
                 <li class="nav_link">
                   <a class="menu__link add" href="contact.html">Contacts</a>
@@ -126,9 +126,9 @@
                       >
                     </li>
                     <li><a class="b-link" href="about.html">About</a></li>
-                    <li><a class="b-link" href="#">Works</a></li>
-                    <li><a class="b-link" href="#">For clients</a></li>
-                    <li><a class="b-link" href="#">Contacts</a></li>
+                    <li><a class="b-link" href="work.html">Works</a></li>
+                    <li><a class="b-link" href="forClients.html">For clients</a></li>
+                    <li><a class="b-link" href="contact.html">Contacts</a></li>
                   </ul>
 
                   <input
@@ -587,14 +587,14 @@
         <!-- container -->
       </section>
 
-      <article class="portfolio">
+      <article class="portfolio ">
         <div class="container">
           <h1 class="reviews__title wow animate__animated animate__fadeIn">
             Portfolio
           </h1>
 
           <!-- Swiper -->
-          <div class="portfolio__content mySwiper2">
+          <div class="portfolio__content wow animate__animated animate__fadeInDown mySwiper2">
             <div class="swiper-wrapper">
               <div class="portfolio__boxs swiper-slide">
                 <div class="portfolio__block ">
@@ -737,7 +737,7 @@
         <!-- container -->
       </article>
 
-      <section class="contact wow animate__animated animate__slideInUp">
+      <section class="contact ">
         <div class="container">
           <div class="contact__body">
             <h3 class="contact__title">Contact us</h3>
@@ -745,19 +745,19 @@
               Let’s get to the nex level together
             </h4>
             <div class="contact__content">
-              <div class="contact__left">
+              <div class="contact__left wow animate__animated animate__backInLeft">
                 <form action="" method="post" id="contact_form">
                   <div class="form-group">
                     <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" />
+                    <input type="text" name="fullname" placeholder="Enter your first name" id="fullname" />
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <input type="email" name="email" placeholder="Enter your email" id="email" />
                   </div>
                   <div class="form-group">
                     <label for="message">How can we Help?</label>
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" placeholder="Your massage" id="message"></textarea>
                   </div>
                   <div id="form_result" class="resultform"></div>
                   <input type="hidden" name="send_contactform" value="1" />
@@ -767,7 +767,7 @@
                 </form>
               </div>
 
-              <div class="contact__right">
+              <div class="contact__right wow animate__animated animate__backInRight">
                 <div class="info__head">
                   <div class="info__info phone">
                     <i class="uil uil-phone-alt"></i>

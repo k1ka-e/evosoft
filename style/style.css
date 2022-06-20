@@ -265,6 +265,10 @@ body .overlay:after {
   bottom: calc(55% - 1px);
 }
 
+.menu__link.active {
+  color: var(--primary);
+}
+
 /* /////////////////////////////////////// */
 
 /* !Burger */
@@ -509,9 +513,10 @@ body.open:after {
   border-radius: 30px;
   color: #949494;
   font-size: 14px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  padding: 1rem;
   width: 80%;
 }
 
@@ -611,7 +616,7 @@ select.select-wrap {
 }
 
 .custom-select-wrapper {
-  z-index: 50;
+  z-index: 5;
   position: relative;
   display: inline-block;
   user-select: none;
@@ -1270,7 +1275,6 @@ header {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  
 }
 
 .portfolio__boxs {
@@ -1401,7 +1405,7 @@ header {
   font-size: 20px;
   color: var(--black);
   position: absolute;
-  height: 40px;
+  height: 20px;
   top: -15px;
   left: 44px;
   padding: 0 20px;
@@ -1410,12 +1414,24 @@ header {
 .form-group textarea,
 .form-group input,
 .form-group select {
-  border: 1px solid var(--black);
+  border: 1px solid #000;
   font-weight: normal;
   font-size: 20px;
   padding: 12.5px 25px;
   margin-bottom: 35px;
-  color: #fff;
+}
+
+.form-group input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 108.5%;
+  /* or 22px */
+
+  letter-spacing: 0.105em;
+
+  color: #afafaf;
 }
 
 .form-group textarea {
@@ -1423,7 +1439,7 @@ header {
 }
 
 .form-group select {
-  color: #fff;
+  color: #afafaf;
 }
 .form-group textarea {
   resize: none;
@@ -1564,6 +1580,7 @@ header {
   margin-left: 1rem;
   margin-top: 0;
 }
+
 
 /* !INDEX END 
 //////////////////////////////////////////*/
@@ -1724,7 +1741,6 @@ header {
   position: relative;
 }
 
-
 /* Customers */
 
 .customers {
@@ -1736,7 +1752,6 @@ header {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  
 }
 
 .customers__img {
@@ -1746,4 +1761,56 @@ header {
 
 .customers__block {
   align-items: center;
+}
+
+
+/* forClients__html */
+
+.clients {
+  padding-top: 4rem;
+}
+
+.clients__content {
+  display: flex;
+
+}
+
+.client__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--black);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: calc((100vh - 200px) / 34);
+  margin-bottom: calc((100vh - 200px) / 30);
+  max-width: 85%;
+}
+
+.client__left,
+.client__right {
+  width: 50%;
+  margin-top: 50px;
+  transition: 0.8s;
+  margin-right: 61.5px;
+}
+
+.forClients__column select {
+  -webkit-appearance: auto;
+  appearance: auto;
+  padding: 12.5px 10px; 
+  font-size: 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  word-break: normal;
+}
+
+.forClients__column .sDiv::after {
+  content: ">";
+  font: 17px "Consolas", monospace;
+  color: #fff;
+  transform: rotate(90deg);
+  right: 11px;
+  top: 18px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
 }

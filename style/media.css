@@ -122,6 +122,11 @@
     font-size: 13px;
   }
 
+  .portfolio__img {
+    width: 200px;
+    height: auto;
+  }
+
   /* contact */
   .contact {
     margin-top: 2rem;
@@ -134,11 +139,11 @@
   .contact__left,
   .contact__right {
     width: 100%;
-}
+  }
 
-.contact__right {
+  .contact__right {
     margin-top: 2rem;
-}
+  }
 
   .contact__btn {
     display: none;
@@ -146,14 +151,14 @@
 
   /* about_help */
   .about__help__title,
-  .advantages__title{
+  .advantages__title {
     font-size: 30px;
   }
 
   .column__discription,
   .advantages__list__body {
     margin-top: 2rem;
-    line-height: 1.2; 
+    line-height: 1.2;
   }
 
   .about__help__right {
@@ -167,10 +172,26 @@
     display: block;
   }
 
+  /* form */
+  .form-group textarea,
+  .form-group input,
+  .form-group select {
+    font-size: 10px;
+  }
+
+  /* client in co */
+  .clients__content {
+    display: block;
+  }
+
+  .client__left,
+  .client__right {
+    width: 100%;
+  }
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container {
     max-width: 700px;
   }
@@ -185,6 +206,13 @@
     font-size: 40px;
   }
 
+
+
+  .tabcontant__title {
+    right: -123px;
+    top: 275px;
+  }
+
   .b-menu {
     right: 3.3rem;
   }
@@ -193,6 +221,18 @@
 @media (max-width: 692px) {
   .container {
     max-width: 550px;
+  }
+
+  .services__content {
+    display: block;
+  }
+
+  .tabs button {
+    text-align: center;
+  }
+
+  .portfolio {
+    padding-top: 33rem;
   }
 
   .info__info a,
@@ -235,7 +275,7 @@
   }
 
   .tabcontant__title {
-    right: -57px;
+    right: -10px;
     top: 166px;
   }
 
@@ -261,7 +301,7 @@
   }
 
   .portfolio__block img {
-    width: 400px;
+    width: 250px;
   }
 
   /* Contact */
@@ -277,6 +317,10 @@
     font-size: 15px;
   }
 
+  .contact__right {
+    margin-left: 0;
+  }
+
   /* About__help */
 
   .about__help__right {
@@ -290,17 +334,44 @@
   .advantages__list__item {
     width: 100%;
   }
+
+  /* form */
+  .form-group textarea,
+  .form-group input,
+  .form-group select {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 450px) {
+  .container {
+    max-width: 350px;
+  }
+
+  #canvasOne {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nav__left {
+    gap: 0;
+  }
+
   .b-nav {
     width: 400px;
+  }
+
+  .tablinks {
+    font-size: 13px;
   }
 
   .form-group label {
     left: 12px;
   }
 
+  .about__help__title, .advantages__title {
+    font-size: 20px;
+}
 }
 
 @media (max-width: 390px) {
@@ -313,6 +384,8 @@
     height: 200px;
   }
 
+
+
   .header__left {
     padding-top: 2rem;
   }
@@ -323,23 +396,24 @@
 
   .tabcontent__img {
     width: 193px;
-}
-.tabcontant__title {
+  }
+  .tabcontant__title {
     right: -40px;
     top: 102px;
-}
+  }
 
-.tabcontent__description {
+  .tabcontent__description {
     font-size: 10px;
-}
+  }
 
-.portfolio__block img {
-    width: 350px;
-}
+  .portfolio__block img {
+    width: 150px;
+    height: auto;
+  }
 
-.advantages__list__body {
-    font-size: 10px;
-}
+  .advantages__list__body {
+    font-size: 15px;
+  }
 
 }
 
