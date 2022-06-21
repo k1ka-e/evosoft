@@ -546,10 +546,11 @@ body.open:after {
 }
 
 nav {
-  z-index: 49;
+  z-index: 1;
   width: auto;
+  width: 100%;
   top: 0;
-  background-color: var(--white);
+  background: var(--white);
   padding-top: 20px;
   padding-bottom: 20px;
 }
