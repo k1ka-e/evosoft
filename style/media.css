@@ -97,6 +97,17 @@
     height: 400px;
   }
 
+  .header__btn {
+     width: 120px;
+     height: 120px;
+     font-size: 15px;
+  }
+
+  .header__btn i {
+    max-width: 70px;
+    margin-left: 1.5rem;
+  }
+
   .header__subtitle,
   .about__title,
   .tabcontant__title {
@@ -217,6 +228,12 @@
   }
 }
 
+@media (max-width: 810px) {
+  .header__btn {
+    display: none;
+  }
+}
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 768px) {
   .container {
@@ -260,9 +277,7 @@
     padding-top: 2rem;
   }
 
-  .header__btn {
-    display: none;
-  }
+
 
   .header__title,
   .about__left h2 {
@@ -637,61 +652,3 @@
     padding: 7px 31px;
   }
 }
-
-/* !BTN  */
-@media (max-height: 1080px) {
-  .header__btn {
-    width: calc(100px + 70 * ((100vh - 320px) / 760));
-  }
-}
-@media (max-height: 1080px) {
-  .header__btn {
-    height: calc(100px + 70 * ((100vh - 320px) / 760));
-  }
-}
-
-@media (max-width: 991px) {
-  .header__btn {
-    width: calc(50px + 70 * ((100vh - 320px) / 760));
-  }
-}
-@media (max-width: 991px) {
-  .header__btn {
-    height: calc(50px + 70 * ((100vh - 320px) / 760));
-  }
-}
-
-@media (max-width: 1080px) {
-  .header__btn {
-    font-size: calc(10px + 6 * ((100vh - 320px) / 760));
-  }
-}
-
-@media (max-width: 1080px) {
-  .header__btn i {
-    max-width: calc(27px + 60 * ((100vh - 320px) / 760));
-  }
-}
-
-@media (max-height: 1080px) {
-  .header__btn {
-    font-size: calc(14px + 6 * ((100vh - 320px) / 760));
-  }
-}
-
-@media (max-height: 1080px) {
-  .header__btn i {
-    max-width: calc(68px + 60 * ((100vh - 320px) / 760));
-  }
-}
-
-/* @media (max-height: 1080px) {
-  .header__btn {
-    width: calc(80px + 70 * ((100vh - 320px) / 760));
-  }
-}
-@media (max-height: 1080px) {
-  .header__btn {
-    height: calc(75px + 70 * ((100vh - 320px) / 760));
-  }
-} */

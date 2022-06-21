@@ -823,12 +823,14 @@ header {
 .header__btn {
   border: none;
   margin: 10px 20px;
+  width: 170px;
+    height: 170px;
   text-align: center;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
 }
 .header__btn:hover {
@@ -850,7 +852,7 @@ header {
 }
 
 .header__btn i {
-  margin-left: 1rem;
+  margin-left: 2rem;
   max-width: 110px;
   margin-top: 7px;
 }
