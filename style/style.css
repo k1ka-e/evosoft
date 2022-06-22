@@ -269,6 +269,17 @@ body .overlay:after {
   color: var(--primary);
 }
 
+/* темно-белая тема */
+.theme {
+  cursor: pointer;
+  top: 50%;
+  left: 10px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39,38,40,0.4);
+}
+
 /* /////////////////////////////////////// */
 
 /* !Burger */
