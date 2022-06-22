@@ -1301,13 +1301,14 @@ header {
 }
 
 .portfolio__block:hover {
-  box-shadow: -1px 9px 18px 0px rgba(69, 131, 236, 0.7);
+  /* box-shadow: -1px 9px 18px 0px rgba(69, 131, 236, 0.7); */
 }
 
 .portfolio__block {
   padding: 45px 25px;
   border-radius: 10px;
-  box-shadow: -1px 9px 18px 0px rgb(75 81 91 / 10%);
+  border: 1px solid var(--primary);
+  /* box-shadow: -1px 9px 18px 0px rgb(75 81 91 / 10%); */
   background: #ffffff;
   text-align: center;
   height: 100%;
