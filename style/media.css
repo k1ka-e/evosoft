@@ -70,6 +70,17 @@
   .client__title {
     margin-bottom: calc((251vh - 200px) / 30);
   }
+
+  /* page */
+  .page__left h2 {
+    font-size: 28px;
+  }
+
+  .page__text,
+  .page__list li,
+  .btn-primary.page {
+    font-size: 14px;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -224,6 +235,21 @@
 
   .client__left,
   .client__right {
+    width: 100%;
+  }
+
+  /* page */
+  .page__content {
+    display: block;
+  }
+
+  .page__left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .page__right {
+    margin-left: 0;
     width: 100%;
   }
 }
@@ -569,6 +595,17 @@
   .portfolio__text {
     font-size: 12px;
   }
+
+  /* page */ 
+  .page__left h2 {
+    font-size: 20px;
+  }
+
+  .page__text,
+  .page__list li,
+  .btn-primary.page {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -650,5 +687,10 @@
 
   .btn-primary {
     padding: 7px 31px;
+  }
+
+  /* page */
+  .page__left h2 {
+    font-size: 15px;
   }
 }

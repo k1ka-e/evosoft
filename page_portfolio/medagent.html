@@ -21,13 +21,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="animate/animate.min.css" />
+    <link rel="stylesheet" href="/animate/animate.min.css" />
 
-    <script src="animate/wow.min.js"></script>
+    <script src="/animate/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
-
 
     <!-- GOOGLE FONTS (MONTSERRAT) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,14 +50,14 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/media.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/media.css" />
     <!-- Добавляем в head пустой тег link -->
-    <!-- <link rel="stylesheet" type="text/css" title="theme" href="#" /> -->
+    <link rel="stylesheet" type="text/html" title="theme" href="#" />
 
     <!-- Script -->
-    <script src="script/app.js" defer></script>
-    <script src="script/particles.js" defer></script>
+    <script src="/script/app.js" defer></script>
+    <script src="/script/particles.js" defer></script>
 
     <title>Evosoft Solutions</title>
   </head>
@@ -75,41 +74,44 @@
           <div class="nav__content">
             <div class="nav__left">
               <div class="nav__logo">
-                <a href="index.html"><img src="img/Evosoft.png" /></a>
+                <a href="index.html"><img src="/img/Evosoft.png" /></a>
               </div>
 
               <div class="select-wrap">
-              <select
-                class="custom-select"
-                id="select"
-                name="select"
-                placeholder="En"
-              >
-                <option value="option1">Uz</option>
-                <option value="option2">En</option>
-                <option value="option3">Ru</option>
-              </select>
-            </div>
-
+                <select
+                  class="custom-select"
+                  id="select"
+                  name="select"
+                  placeholder="En"
+                >
+                  <option value="option1">Uz</option>
+                  <option value="option2">En</option>
+                  <option value="option3">Ru</option>
+                </select>
+              </div>
             </div>
             <!-- nav__left -->
 
             <div class="nav__right">
               <ul class="nav_menu">
                 <li class="nav_link">
-                  <a class="menu__link add" href="index.html">Home</a>
+                  <a class="menu__link add" href="/index.html">Home</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link add" href="about.html">About</a>
+                  <a class="menu__link add" href="/about.html">About</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link active add" href="work.html">Works</a>
+                  <a class="menu__link  active add" href="/work.html">Works</a>
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link  add" href="forClients.html">For Clients</a>
+                  <a class="menu__link add" href="/forClients.html"
+                    >For clients</a
+                  >
                 </li>
                 <li class="nav_link">
-                  <a class="menu__link add" href="contact.html">Contacts</a>
+                  <a class="menu__link add" href="/contact.html"
+                    >Contacts</a
+                  >
                 </li>
               </ul>
 
@@ -128,7 +130,9 @@
                     </li>
                     <li><a class="b-link" href="about.html">About</a></li>
                     <li><a class="b-link" href="work.html">Works</a></li>
-                    <li><a class="b-link" href="forClients.html">For Clients</a></li>
+                    <li>
+                      <a class="b-link" href="forClients.html">For clients</a>
+                    </li>
                     <li><a class="b-link" href="contact.html">Contacts</a></li>
                   </ul>
 
@@ -164,156 +168,78 @@
         <!-- container -->
       </nav>
 
-      <section class="portfolio__html wow animate__animated animate__fadeInUp">
+      <section class="page__medagent">
         <div class="container">
-          <h1 class="reviews__title wow animate__animated animate__fadeIn">
-            Portfolio
-          </h1>
+          <div class="page__content">
+            <div class="page__left">
+              <div class="page__dadge">CRM - System</div>
 
-          <!-- Swiper -->
-          <div class="portfolio__content mySwiper2">
-            <div class="swiper-wrapper">
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/medagent.html">
-                  <img class="portfolio__img" src="img/portfolio/medAgent.jpg" /> 
-                  <div class="portfolio__name">MedAgent System</div>
-                  <div class="portfolio__text">
-                    Automation for pharmaceutical companies
-                  </div>
-                </a>
-                </div>
-              </div>
-              
-
-              <div class="portfolio__boxs swiper-slide " style="margin-top: 0;">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/samerteks.html">
-                  <img class="portfolio__img" src="img/portfolio/sam_erteks.jfif" /> 
-                  <div class="portfolio__name">Samerteks CARPET</div>
-                  <div class="portfolio__text">
-                    System for the operation of branches and a warehouse.
-                  </div>
-                </a>
-                </div>
+              <h2>
+                MedAgent System<br />Automation for pharmaceutical companies
+              </h2>
+              <div class="page__text">
+                A system has been created to automate the work of field
+                employees of pharmaceutical companies. This system has a wide
+                range of modules, and includes almost all the roles of employees
+                within a pharmaceutical company.
               </div>
 
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/olimpiada.html">
-                  <img class="portfolio__img" src="img/portfolio/olimpiada edu.jpg" /> 
-                  <div class="portfolio__name">Olimpiada Edu </div>
-                  <div class="portfolio__text">
-                    Online Olympiad platform, Government order.
-                  </div>
-                </a>
-                </div>
-              </div>
+              <ul class="page__list">
+                <li>
+                    <i class="uil uil-check"></i>
+                    Monitoring the work of field staff
+                </li>
+                <li>
+                    <i class="uil uil-check"></i>
+                    Sales management
+                </li>
+                <li>
+                    <i class="uil uil-check"></i>
+                    KPI system and employee knowledge base
+                </li>
+              </ul>
 
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/carfix.html">
-                  <img class="portfolio__img" src="img/portfolio/carfix.jpg" /> 
-                  <div class="portfolio__name">Carfix Bot</div>
-                  <div class="portfolio__text">
-                    Telegram bot to search for auto mechanics.
-                  </div>
+              <div class="page__link">
+                <a target="_blank" href="https://demo.medagent.uz/account/">
+                <button class="btn-primary page" id="send_page">
+                  Visit Site
+                  </button>
                 </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/colba.html">
-                  <img class="portfolio__img" src="img/portfolio/colba.jpg" /> 
-                  <div class="portfolio__name">COLBA Education</div>
-                  <div class="portfolio__text">
-                    Telegram bot for the COLBA learning center.
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/webster.html">
-                  <img class="portfolio__img" src="img/portfolio/webster.png" /> 
-                  <div class="portfolio__name">Webster University</div>
-                  <div class="portfolio__text">
-                    Websity for Webster University in Tashkent.
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/task.html">
-                  <img class="portfolio__img" src="img/portfolio/task.jpg" /> 
-                  <div class="portfolio__name">TASK Management</div>
-                  <div class="portfolio__text">
-                    Task and document management system.
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/bozor.html">
-                  <img class="portfolio__img" src="img/portfolio/uy-bozor.jpg" /> 
-                  <div class="portfolio__name">Uy-Bozor Bot</div>
-                  <div class="portfolio__text">
-                    Telegram bot made for real estate company.
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/education.html">
-                  <img class="portfolio__img" src="img/portfolio/pr-education.jpg" /> 
-                  <div class="portfolio__name">LLC "PRO EDUCATION"</div>
-                  <div class="portfolio__text">
-                    Landing page made for a consulting company
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/master_study.html">
-                  <img class="portfolio__img" src="img/portfolio/MS_GROUP.jpg" /> 
-                  <div class="portfolio__name">Master Study Group</div>
-                  <div class="portfolio__text">
-                    Website for a network of learning centers.
-                  </div>
-                </a>
-                </div>
-              </div>
-
-              <div class="portfolio__boxs swiper-slide">
-                <div class="portfolio__block ">
-                  <a href="./page_portfolio/litsey.html">
-                  <img class="portfolio__img" src="img/portfolio/olimpiada edu.jpg" /> 
-                  <div class="portfolio__name">Litsey Edu</div>
-                  <div class="portfolio__text">
-                    Online admission made for lyceums, Government order.
-                  </div>
-                </a>
-                </div>
               </div>
 
             </div>
-            <div class="swiper-pagination"></div>
-            
-          </div>
-        </div><!-- container -->
+            <div class="page__right">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="page__img">
+                            <img src="/img/page_portfolio/medagent1.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="page__img">
+                            <img src="/img/page_portfolio/medagent2.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="page__img">
+                          
+                            <img src="/img/page_portfolio/medagent3.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+
+        </div> <!-- page__content -->
+        </div> <!-- container -->
       </section>
 
-      <section class="contact wow animate__animated animate__fadeInUp">
+      <section
+        class="contact contact__html wow animate__animated animate__fadeInUp"
+      >
         <div class="container">
           <div class="contact__body">
             <h3 class="contact__title">Contact us</h3>
@@ -325,15 +251,29 @@
                 <form action="" method="post" id="contact_form">
                   <div class="form-group">
                     <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" placeholder="Enter your first name" id="fullname" />
+                    <input
+                      type="text"
+                      name="fullname"
+                      placeholder="Enter your first name"
+                      id="fullname"
+                    />
                   </div>
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="Enter your email" id="email" />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      id="email"
+                    />
                   </div>
                   <div class="form-group">
                     <label for="message">How can we Help?</label>
-                    <textarea name="message" placeholder="Your massage" id="message"></textarea>
+                    <textarea
+                      name="message"
+                      placeholder="Your massage"
+                      id="message"
+                    ></textarea>
                   </div>
                   <div id="form_result" class="resultform"></div>
                   <input type="hidden" name="send_contactform" value="1" />

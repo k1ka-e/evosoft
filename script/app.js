@@ -87,6 +87,13 @@ new Swiper(".mySwiper2", {
   }
 });
 
+ new Swiper(".mySwiper3", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 /* select======== */
 const getSelectTemplate = (classes, placeholder, content) => `
 <div class="${classes}">
