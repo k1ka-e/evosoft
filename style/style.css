@@ -1309,7 +1309,7 @@ header {
   border-radius: 10px;
   border: 1px solid var(--primary);
   /* box-shadow: -1px 9px 18px 0px rgb(75 81 91 / 10%); */
-  background: #ffffff;
+  /* background: #ffffff; */
   text-align: center;
   height: 100%;
   transition: transform 0.5s;
