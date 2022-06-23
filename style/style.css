@@ -64,12 +64,12 @@
 
 @font-face {
   font-family: "Potra";
-  src: url("/font/Potra.ttf");
+  src: url("@/font/Potra.ttf");
 }
 
 @font-face {
   font-family: "Body-Grotesque-Fit-Bold-trial";
-  src: url("/font/Body-Grotesque-Fit-Bold-trial.ttf");
+  src: url("@/font/Body-Grotesque-Fit-Bold-trial.ttf");
 }
 
 /* container
@@ -245,12 +245,15 @@ body .overlay:after {
 
 @keyframes bounce {
   0% {
+    -webkit-transform: translateY(0) rotate(-90deg);
     transform: translateY(0) rotate(-90deg);
   }
   50% {
+    -webkit-transform: translateY(-25px) rotate(-90deg);
     transform: translateY(-25px) rotate(-90deg);
   }
   100% {
+    -webkit-transform: translateY(0) rotate(-90deg);
     transform: translateY(0) rotate(-90deg);
   }
 }
@@ -418,11 +421,15 @@ body.open:after {
   border-left: rgba(255, 255, 255, 0) solid 2px;
   color: var(--primary);
   transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   width: auto;
+
 }
 .b-link,
 .b-menu {
   transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
 .b-nav li {
@@ -443,6 +450,8 @@ body.open:after {
   padding-top: 20px;
   position: relative;
   top: -10px;
+  -ms-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   width: 43px;
   z-index: 12;
@@ -456,12 +465,15 @@ body.open:after {
 }
 .b-bun {
   background: var(--primary);
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 .b-brand,
 .b-bun {
   position: relative;
   transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
 .b-bun--top {
@@ -476,6 +488,8 @@ body.open:after {
 .b-brand {
   color: #2196f3;
   top: -21.43px;
+  -webkit-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 13;
 }
@@ -589,6 +603,7 @@ nav {
 
 .menu__link:hover:after {
   width: 100%;
+  -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
 }
 
@@ -596,6 +611,7 @@ nav {
 a.nav__play:hover {
   color: var(--primary);
   transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
 }
 
 a.nav__play {
@@ -662,6 +678,7 @@ select.select-wrap {
   text-transform: uppercase;
   color: var(--primary);
 
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -681,8 +698,16 @@ select.select-wrap {
   margin-top: -1px;
   border-bottom: 1px solid #2c2c2c;
   border-right: 1px solid #2c2c2c;
+  -webkit-transform: rotate(45deg) translateY(-50%);
   transform: rotate(45deg) translateY(-50%);
+  -ms-transform: rotate(45deg) translateY(-50%);
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
 }
 
@@ -693,6 +718,7 @@ select.select-wrap {
 
 .custom-select.opened .custom-select-trigger:after {
   margin-top: 3px;
+  -webkit-transform: rotate(-135deg) translateY(-50%);
   transform: rotate(-135deg) translateY(-50%);
 }
 
@@ -710,6 +736,7 @@ select.select-wrap {
   font-size: 18px;
   line-height: 47px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
@@ -721,6 +748,7 @@ select.select-wrap {
   font-size: 18px;
   line-height: 47px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
@@ -744,10 +772,15 @@ select.select-wrap {
   border-radius: 20px solid var(--primary);
 
   background: #fff;
+
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  -webkit-transform: translateY(-15px);
   transform: translateY(-15px);
 
   font-family: "Montserrat";
@@ -771,7 +804,10 @@ header {
 }
 
 .header__subtitle {
+
+  -webkit-font-family: "Potra";
   font-family: "Potra";
+
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -810,7 +846,10 @@ header {
   box-sizing: border-box;
   position: relative;
   display: block;
+
+  -webkit-transform: scale(var(--ggs, 1));
   transform: scale(var(--ggs, 1));
+
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   box-shadow: inset 0 0 0 2px;
@@ -827,7 +866,10 @@ header {
   height: 10px;
   border-top: 2px solid;
   border-right: 2px solid;
+
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+
   right: -1px;
   bottom: -4px;
 }
@@ -1033,7 +1075,10 @@ header {
 }
 
 .reviews__title {
+
+  -webkit-font-family: "Body-Grotesque-Fit-Bold-trial";
   font-family: "Body-Grotesque-Fit-Bold-trial";
+
   font-weight: 800;
   text-transform: uppercase;
   align-items: center;
