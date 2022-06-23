@@ -64,12 +64,12 @@
 
 @font-face {
   font-family: "Potra";
-  src: url("@/font/Potra.ttf");
+  src: url("/font/Potra.ttf");
 }
 
 @font-face {
   font-family: "Body-Grotesque-Fit-Bold-trial";
-  src: url("@/font/Body-Grotesque-Fit-Bold-trial.ttf");
+  src: url("/font/Body-Grotesque-Fit-Bold-trial.ttf");
 }
 
 /* container
