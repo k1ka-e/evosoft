@@ -833,6 +833,7 @@ header {
 }
 
 .header__btn {
+  cursor: pointer;
   border: none;
   margin: 10px 20px;
   width: 170px;
@@ -856,9 +857,12 @@ header {
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
+
+
 .header__btn:hover {
   background: transparent;
   color: var(--black);
+  transition: all 0.5s ease-in;
 }
 
 .header__btn i {
@@ -1255,6 +1259,7 @@ header {
 /* Change background color of buttons on hover */
 .tabs button:hover {
   background-color: var(--black);
+  transition: all 0.5s ease;
   color: var(--white);
 }
 
@@ -1303,6 +1308,7 @@ header {
   -moz-box-shadow: -1px 9px 18px 0px rgba(69, 131, 236, 0.7);
   -webkit-box-shadow: -1px 9px 18px 0px rgba(69, 131, 236, 0.7);
   box-shadow: -1px 9px 18px 0px rgba(69, 131, 236, 0.7);
+  transition: all 0.3s ease-in;
 }
 
 .portfolio__block {
@@ -1511,6 +1517,7 @@ header {
 .btn-primary:hover {
   background: transparent;
   color: var(--black);
+  transition: all 0.5s ease;
 }
 
 .info__info {
